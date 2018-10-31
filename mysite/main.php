@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
 }else if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $inDate = $_POST['date'];
     $inTime = $_POST['time'];
-    $inDesc = $_POST['des'];
+    $inDesc = h($_POST['des']);
 
     $sql = "insert into posts (date, time, description) values (?, ?, ?)";
     $stmt = $dbh->prepare($sql);
