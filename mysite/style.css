@@ -1,0 +1,49 @@
+body{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+#container{
+    margin:10px;
+}
+
+#container span{
+    display: inline-block;
+    width: 70px;
+}
+
+#container input{
+    margin:5px 0;
+    width:180px;
+}
+
+button{
+    margin:5px 5px 5px 0;
+}
+
+table{
+    margin-top:10px;
+    border-collapse: collapse;
+}
+
+table,th,tr, td{
+    border: 1px solid black;
+}
+
+table th,td{
+    width:120px;
+    padding:5px;
+}
+
+table th:nth-child(3n){
+    width:200px;
+}
+
+table td:nth-child(3n){
+    width:200px;
+}
+
+#error{
+    color:red;
+}
